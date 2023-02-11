@@ -5,7 +5,7 @@ function assets($path){
 }
 
 function url($path){
-    return BASEURL . "/$path";
+    return ("Location: ".BASEURL . "/$path");
 }
 
 function redirect($string){

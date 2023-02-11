@@ -19,7 +19,7 @@
 
             <!-- Nav Item - Dashboard -->
             <li class="nav-item active">
-                <a class="nav-link" href="index.html">
+                <a class="nav-link" href="<?=BASEURL?>dashboard">
                     <i class="fas fa-fw fa-tachometer-alt"></i>
                     <span>Dashboard</span></a>
             </li>
@@ -58,7 +58,7 @@
                 <div id="collapseUtilities" class="collapse" aria-labelledby="headingUtilities"
                     data-parent="#accordionSidebar">
                     <div class="bg-white py-2 collapse-inner rounded">
-                        <a class="collapse-item" href="utilities-color.html">Jenis</a>
+                        <a class="collapse-item <?=$data['title'] === 'Category' ? 'active' : ''?> " href="<?=BASEURL?>jenis/">Jenis</a>
                         <a class="collapse-item" href="utilities-border.html">Ruang</a>
                     </div>
                 </div>
