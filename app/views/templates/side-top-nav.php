@@ -74,7 +74,7 @@
                     data-parent="#accordionSidebar">
                     <div class="bg-white py-2 collapse-inner rounded">
                         <a class="collapse-item" href="utilities-color.html">Pegawai</a>
-                        <a class="collapse-item" href="utilities-border.html">Petugas</a>
+                        <a class="collapse-item" href="<?=BASEURL?>petugas">Petugas</a>
                     </div>
                 </div>
             </li>
