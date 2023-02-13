@@ -45,12 +45,7 @@
                                         Hapus
                                     </button>
                                 </form>
-
-
                             </td>
-
-
-
                     </tr>
                     <?php endforeach ?>
                     </tbody>    
@@ -66,7 +61,7 @@
         <div class="modal-dialog" role="document">
             <div class="modal-content">
                 <div class="modal-header">
-                    <h5 class="modal-title" id="exampleModalLabel">Ready to Leave?</h5>
+                    <h5 class="modal-title" id="exampleModalLabel">Edit Jenis</h5>
                     <button class="close" type="button" data-dismiss="modal" aria-label="Close">
                         <span aria-hidden="true">×</span>
                     </button>
@@ -81,12 +76,14 @@
                             name="nama_jenis" aria-describedby="emailHelp"
                             value="<?=$jenis['nama_jenis']?>">
                     </div>
+                    </div>
                     <div class="d-flex flex-column">
                     <label for="">Kode Jenis</label>
                     <div class="form-group">
                         <input type="text" class="form-control form-control-user"
                             name="kode_jenis" aria-describedby="emailHelp"
                             value="<?=$jenis['kode_jenis']?>">
+                    </div>
                     </div>
                     <div class="d-flex flex-column">
                     <label for="">Keterangan</label>
@@ -103,8 +100,10 @@
                 </div>
                 </form>
             </div>
+            </div>
         </div>
-    </div>
+</div>
+
 <?php endforeach?>
 
 
@@ -149,5 +148,6 @@
                 </div>
                 </form>
             </div>
+            </div>
         </div>
-    </div>
+</div>

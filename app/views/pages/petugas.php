@@ -3,7 +3,7 @@
     <!-- Page Heading -->
     <div class = "d-flex flex-row justify-content-between">
         <h1 class="h3 mb-2 text-gray-800">Tables</h1>
-        <button class="btn-primary btn mr-0" href="#" data-toggle="modal" data-target="#tambahModal">
+        <button type="button" class="btn-primary btn mr-0" data-toggle="modal" data-target="#tambahModal">
             Tambah
         </button>
     </div>
@@ -66,7 +66,7 @@
     <div class="modal-dialog" role="document">
         <div class="modal-content">
             <div class="modal-header">
-                <h5 class="modal-title" id="exampleModalLabel">Ready to Leave?</h5>
+                <h5 class="modal-title" id="exampleModalLabel">Edit Petugas</h5>
                 <button class="close" type="button" data-dismiss="modal" aria-label="Close">
                     <span aria-hidden="true">×</span>
                 </button>
@@ -101,25 +101,27 @@
                             <button class="btn btn-secondary" type="reset" data-dismiss="modal">Cancel</button>
                             <button class="btn btn-primary" type="submit">Edit</button>
                         </div>
+                    </div>
                 </form>
             </div>
         </div>
     </div>
+</div>
     <?php endforeach?>
 
 
-    <div class="modal fade" id="tambahModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+    <div class="modal fade" id="tambahModal" tabindex="-1"  aria-labelledby="tambahModalLabel"
          aria-hidden="true">
-        <div class="modal-dialog" role="document">
+        <div class="modal-dialog">
             <div class="modal-content">
                 <div class="modal-header">
-                    <h5 class="modal-title" id="exampleModalLabel">Tambah Jenis</h5>
+                    <h5 class="modal-title" id="tambahModalLabel">Tambah Petugas</h5>
                     <button class="close" type="button" data-dismiss="modal" aria-label="Close">
                         <span aria-hidden="true">×</span>
                     </button>
                 </div>
+                <form action="<?=BASEURL?>petugas/add" method=post>
                 <div class="modal-body">
-                    <form action="<?=BASEURL?>petugas/add" method=post>
                         <div class="d-flex flex-column">
                             <label for="">Nama Petugas</label>
                             <div class="form-group">
@@ -151,3 +153,4 @@
                 </div>
             </div>
         </div>
+    </div>

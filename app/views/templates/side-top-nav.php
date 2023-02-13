@@ -18,7 +18,7 @@
             <hr class="sidebar-divider my-0">
 
             <!-- Nav Item - Dashboard -->
-            <li class="nav-item active">
+            <li class="nav-item">
                 <a class="nav-link" href="<?=BASEURL?>dashboard">
                     <i class="fas fa-fw fa-tachometer-alt"></i>
                     <span>Dashboard</span></a>
@@ -59,7 +59,7 @@
                     data-parent="#accordionSidebar">
                     <div class="bg-white py-2 collapse-inner rounded">
                         <a class="collapse-item <?=$data['title'] === 'Category' ? 'active' : ''?> " href="<?=BASEURL?>jenis/">Jenis</a>
-                        <a class="collapse-item" href="utilities-border.html">Ruang</a>
+                        <a class="collapse-item<?=$data['title'] === 'Category' ? 'active' : ''?> " href="<?=BASEURL?>ruang/">Ruang</a>
                     </div>
                 </div>
             </li>
@@ -73,7 +73,7 @@
                 <div id="collapseUsers" class="collapse" aria-labelledby="headingUtilities"
                     data-parent="#accordionSidebar">
                     <div class="bg-white py-2 collapse-inner rounded">
-                        <a class="collapse-item" href="utilities-color.html">Pegawai</a>
+                        <a class="collapse-item" href="<?=BASEURL?>pegawai">Pegawai</a>
                         <a class="collapse-item" href="<?=BASEURL?>petugas">Petugas</a>
                     </div>
                 </div>
