@@ -11,7 +11,7 @@ class Dashboard extends Controller{
             $data['title'] = "Dashboard";
             $data['total_petugas'] = count($this->model('petugasModel')->selectAllPetugas());
             $data['total_pegawai'] = count($this->model('pegawaiModel')->selectAllPegawai());
-            $data['total_inventaris'] = count($this->model('inventarisModel')->selectAllInventaris());
+            $data['total_inventaris'] = count($this->model('inventarisModel')->selectInventaris());
             $data['total_jenis'] = count($this->model('jenisModel')->selectAllJenis());
             $this->view('templates/header', $data);
             $this->view('templates/side-top-nav', $data);

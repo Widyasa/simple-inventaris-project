@@ -29,7 +29,7 @@
 
             <!-- Nav Item - Dashboard -->
             <li class="nav-item">
-                <a class="nav-link" href="index.html">
+                <a class="nav-link" href="<?=BASEURL?>inventaris">
                     <i class="fas fa-fw fa-tachometer-alt"></i>
                     <span>Inventaris</span></a>
             </li>

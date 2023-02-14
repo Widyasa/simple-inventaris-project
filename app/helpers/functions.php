@@ -9,6 +9,6 @@ function url($path){
 }
 
 function redirect($string){
-    header("Location: " . BASEURL . "$string");
+    header("Location: " . BASEURL . "   $string");
     exit;
 }

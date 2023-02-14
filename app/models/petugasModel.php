@@ -19,6 +19,7 @@ class petugasModel
     }
     public function selectAdminByUsername($username)
     {
+        var_dump($username); die;
         $this->db->query("SELECT * FROM {$this->petugas} WHERE `id_level` = 1 AND `username`=:username");
         $this->db->bind('username', $username);
         $this->db->execute();
